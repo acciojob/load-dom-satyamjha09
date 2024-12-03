@@ -2,6 +2,8 @@
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
-	const Dom = document.getElementById("DOM");
-	Dom.textContent = "DOM load success"
+
+	const message = document.createTextNode("DOM load success");
+
+	document.body.appendChild(message);
 });
